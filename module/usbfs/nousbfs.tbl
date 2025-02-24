@@ -1,0 +1,22 @@
+Libname usbfs
+Version 1.1
+
+Entry/5	start
+Entry	-
+Entry	-
+Entry	-
+
+# usbInit  --> pcInit
+# usbOpen  --> pcOpen
+# usbClose --> pcClose
+# usbRead  --> pcRead
+# usbWrite --> pcWrite
+# usbLseek --> pcLseek
+# usbPuts  --> ...
+
+Entry	pcInit
+Entry	pcOpen
+Entry	pcClose
+Entry	pcRead
+Entry	pcWrite
+Entry	pcLseek
