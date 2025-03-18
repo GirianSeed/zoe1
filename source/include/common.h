@@ -68,21 +68,19 @@
 
 #define HANGUP()        (*(int *)1 = 0)
 
-#if 0
 #define ASSERT(cond)                                            \
     if (!(cond)) {                                              \
         printf("Assertion failed: file %s, line %d\n", __FILE__, __LINE__); \
         MTS_Panic();                                            \
         /* todo: decompile (C++ stuff?) */                      \
     }
-#else
-#define ASSERT(cond, _file, _line)                              \
+
+#define ASSERTLINE(cond, _file, _line)                          \
     if (!(cond)) {                                              \
         printf("Assertion failed: file %s, line %d\n", _file, _line); \
         MTS_Panic();                                            \
         /* todo: decompile (C++ stuff?) */                      \
     }
-#endif
 
 /*---------------------------------------------------------------------------*/
 // https://en.cppreference.com/w/c/language/arithmetic_types#Boolean_type
