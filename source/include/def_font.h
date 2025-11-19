@@ -12,7 +12,7 @@ typedef struct _DEF_HANKAKU_PROP {
 // USRDIR/ZoE1/stage/title/ExtractSpacingInfo.rb
 //
 // Comments were (badly) machine-translated from Japanese.
-// Should we translate these back?
+// TODO: Should we translate these back?
 
 // clang-format off
 typedef struct _DEF_FONT_TABLE {
